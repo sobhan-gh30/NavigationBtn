@@ -85,3 +85,32 @@ body{
     -ms-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
 }
+
+/* Default State */
+.account, .info, .message, .call {
+    left: 2rem;
+    top: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Active State */
+.active-rotate {
+    transform: rotate(-45deg);
+}
+
+.active-position .account {
+    left: 8rem;
+    top: 1rem;
+}
+.active-position .info {
+    left: 8rem;
+    top: 5rem;
+}
+.active-position .message {
+    left: 5rem;
+    top: 8rem;
+}
+.active-position .call {
+    left: 1rem;
+    top: 8rem;
+}
